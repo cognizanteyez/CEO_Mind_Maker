@@ -1,0 +1,18 @@
+intents:
+  - greet
+  - ask_business_strategy
+  - ask_financial_analysis
+  - ask_leadership_advice
+  - ask_for_risks
+  - ask_custom
+  - nlu_fallback
+
+responses:
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
+
+policies:
+  - name: FallbackPolicy
+    nlu_threshold: 0.4
+    core_threshold: 0.3
+    fallback_action_name: "action_default_fallback"

@@ -1,0 +1,54 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+
+- intent: ask_business_strategy
+  examples: |
+    - What should be our focus for the next quarter?
+    - How can we improve our market position?
+    - What are the best practices for expanding into new markets?
+    - Can you suggest a new business strategy?
+    - Should we diversify our product line?
+    - What are the trends in our industry?
+
+- intent: ask_financial_analysis
+  examples: |
+    - Can you analyze our revenue growth?
+    - How are our current assets performing?
+    - What does our financial forecast look like?
+    - Provide an overview of our financial health.
+    - Are we meeting our financial targets?
+    - What are our biggest expenses?
+
+- intent: ask_leadership_advice
+  examples: |
+    - How can I improve team morale?
+    - What are some effective leadership strategies?
+    - How should I handle conflicts within the team?
+    - What's the best way to lead during a crisis?
+    - How can I motivate my team?
+
+- intent: ask_for_risks
+  examples: |
+    - What are the potential risks in our current strategy?
+    - How can we mitigate risks in the upcoming project?
+    - What are the financial risks we should be aware of?
+    - Can you list some business risks?
+
+- intent: ask_custom
+  examples: |
+    - Can you provide a custom report on [sales](metric)?
+    - Give me the details on [customer satisfaction](metric)
+    - I need a summary of [revenue](metric)
+    - Tell me about our [performance](metric) this month
+    - What are the latest updates on [product launches](metric)?
+    - What's our [market share](metric) in the industry?
+
+entities:
+  - metric

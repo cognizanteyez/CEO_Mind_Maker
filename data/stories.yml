@@ -1,0 +1,31 @@
+version: "3.0"
+stories:
+- story: greet and provide info
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: business strategy inquiry
+  steps:
+  - intent: ask_business_strategy
+  - action: utter_ask_business_strategy
+
+- story: financial analysis inquiry
+  steps:
+  - intent: ask_financial_analysis
+  - action: utter_ask_financial_analysis
+
+- story: leadership advice inquiry
+  steps:
+  - intent: ask_leadership_advice
+  - action: utter_ask_leadership_advice
+
+- story: risks inquiry
+  steps:
+  - intent: ask_for_risks
+  - action: utter_ask_for_risks
+
+- story: custom metric inquiry
+  steps:
+  - intent: ask_custom
+  - action: action_provide_custom_info
